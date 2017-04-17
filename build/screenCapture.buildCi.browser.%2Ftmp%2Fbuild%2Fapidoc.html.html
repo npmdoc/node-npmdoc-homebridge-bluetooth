@@ -1,0 +1,450 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/vojtamolda/homebridge-bluetooth#readme">homebridge-bluetooth (v0.1.6)</a>
+</h1>
+<h4>Homebridge plugin that exposes Bluetooth peripherals as HomeKit accessories</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.homebridge-bluetooth">module homebridge-bluetooth</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge-bluetooth.homebridge-bluetooth">
+            function <span class="apidocSignatureSpan"></span>homebridge-bluetooth
+            <span class="apidocSignatureSpan">(homebridge)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge-bluetooth.accessory">
+            function <span class="apidocSignatureSpan">homebridge-bluetooth.</span>accessory
+            <span class="apidocSignatureSpan">(accessory, bluetoothService)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge-bluetooth.characteristic">
+            function <span class="apidocSignatureSpan">homebridge-bluetooth.</span>characteristic
+            <span class="apidocSignatureSpan">(characteristic)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge-bluetooth.platform">
+            function <span class="apidocSignatureSpan">homebridge-bluetooth.</span>platform
+            <span class="apidocSignatureSpan">(noble, uuidGen, accessory, bluetoothAccessory)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge-bluetooth.service">
+            function <span class="apidocSignatureSpan">homebridge-bluetooth.</span>service
+            <span class="apidocSignatureSpan">(service, bluetoothCharacteristic)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge-bluetooth.toString">
+            function <span class="apidocSignatureSpan">homebridge-bluetooth.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.homebridge-bluetooth.accessory">module homebridge-bluetooth.accessory</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge-bluetooth.accessory.accessory">
+            function <span class="apidocSignatureSpan">homebridge-bluetooth.</span>accessory
+            <span class="apidocSignatureSpan">(accessory, bluetoothService)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.homebridge-bluetooth.characteristic">module homebridge-bluetooth.characteristic</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge-bluetooth.characteristic.characteristic">
+            function <span class="apidocSignatureSpan">homebridge-bluetooth.</span>characteristic
+            <span class="apidocSignatureSpan">(characteristic)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.homebridge-bluetooth.platform">module homebridge-bluetooth.platform</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge-bluetooth.platform.platform">
+            function <span class="apidocSignatureSpan">homebridge-bluetooth.</span>platform
+            <span class="apidocSignatureSpan">(noble, uuidGen, accessory, bluetoothAccessory)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.homebridge-bluetooth.service">module homebridge-bluetooth.service</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge-bluetooth.service.service">
+            function <span class="apidocSignatureSpan">homebridge-bluetooth.</span>service
+            <span class="apidocSignatureSpan">(service, bluetoothCharacteristic)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.homebridge-bluetooth.toString">module homebridge-bluetooth.toString</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge-bluetooth.toString.toString">
+            function <span class="apidocSignatureSpan">homebridge-bluetooth.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.homebridge-bluetooth" id="apidoc.module.homebridge-bluetooth">module homebridge-bluetooth</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge-bluetooth.homebridge-bluetooth" id="apidoc.element.homebridge-bluetooth.homebridge-bluetooth">
+        function <span class="apidocSignatureSpan"></span>homebridge-bluetooth
+        <span class="apidocSignatureSpan">(homebridge)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">homebridge-bluetooth = function (homebridge) {
+  console.log("Homebridge API version: " + homebridge.version);
+
+  Noble = require('noble');
+  Accessory = homebridge.platformAccessory;
+  Service = homebridge.hap.Service;
+  Characteristic = homebridge.hap.Characteristic;
+  UUIDGen = homebridge.hap.uuid;
+
+  BluetoothCharacteristic = require("./source/characteristic.js")(Characteristic);
+  BluetoothService = require("./source/service.js")(Service, BluetoothCharacteristic);
+  BluetoothAccessory = require("./source/accessory.js")(Accessory, BluetoothService);
+  BluetoothPlatform = require("./source/platform.js")(Noble, UUIDGen, Accessory, BluetoothAccessory);
+
+  homebridge.registerPlatform("homebridge-bluetooth", "Bluetooth", BluetoothPlatform, true);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge-bluetooth.accessory" id="apidoc.element.homebridge-bluetooth.accessory">
+        function <span class="apidocSignatureSpan">homebridge-bluetooth.</span>accessory
+        <span class="apidocSignatureSpan">(accessory, bluetoothService)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">accessory = function (accessory, bluetoothService) {
+  Accessory = accessory;
+  BluetoothService = bluetoothService;
+
+  return BluetoothAccessory;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge-bluetooth.characteristic" id="apidoc.element.homebridge-bluetooth.characteristic">
+        function <span class="apidocSignatureSpan">homebridge-bluetooth.</span>characteristic
+        <span class="apidocSignatureSpan">(characteristic)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">characteristic = function (characteristic) {
+  Characteristic = characteristic;
+
+  return BluetoothCharacteristic;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge-bluetooth.platform" id="apidoc.element.homebridge-bluetooth.platform">
+        function <span class="apidocSignatureSpan">homebridge-bluetooth.</span>platform
+        <span class="apidocSignatureSpan">(noble, uuidGen, accessory, bluetoothAccessory)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">platform = function (noble, uuidGen, accessory, bluetoothAccessory) {
+  Noble = noble;
+  UUIDGen = uuidGen
+  Accessory = accessory;
+  BluetoothAccessory = bluetoothAccessory;
+
+  return BluetoothPlatform;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge-bluetooth.service" id="apidoc.element.homebridge-bluetooth.service">
+        function <span class="apidocSignatureSpan">homebridge-bluetooth.</span>service
+        <span class="apidocSignatureSpan">(service, bluetoothCharacteristic)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">service = function (service, bluetoothCharacteristic) {
+  Service = service;
+  BluetoothCharacteristic = bluetoothCharacteristic;
+
+  return BluetoothService;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge-bluetooth.toString" id="apidoc.element.homebridge-bluetooth.toString">
+        function <span class="apidocSignatureSpan">homebridge-bluetooth.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">toString = function () {
+    return text;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+case Characteristic.Formats.INT: // BLEIntCharacteristic
+  value = buffer.readInt32LE(0);
+  break;
+case Characteristic.Formats.FLOAT: // BLEFloatCharacteristic
+  value = buffer.readFloatLE(0);
+  break;
+case Characteristic.Formats.STRING: // BLECharacteristic
+  value = buffer.<span class="apidocCodeKeywordSpan">toString</span>('utf8', 0);
+  break;
+case Characteristic.Formats.UINT8: // BLEUnsignedCharCharacteristic
+  value = buffer.readUInt8(0);
+  break;
+case Characteristic.Formats.UINT16: // BLEUnsignedShortCharacteristic
+  value = buffer.readUInt16LE(0);
+  break;
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.homebridge-bluetooth.accessory" id="apidoc.module.homebridge-bluetooth.accessory">module homebridge-bluetooth.accessory</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge-bluetooth.accessory.accessory" id="apidoc.element.homebridge-bluetooth.accessory.accessory">
+        function <span class="apidocSignatureSpan">homebridge-bluetooth.</span>accessory
+        <span class="apidocSignatureSpan">(accessory, bluetoothService)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">accessory = function (accessory, bluetoothService) {
+  Accessory = accessory;
+  BluetoothService = bluetoothService;
+
+  return BluetoothAccessory;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.homebridge-bluetooth.characteristic" id="apidoc.module.homebridge-bluetooth.characteristic">module homebridge-bluetooth.characteristic</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge-bluetooth.characteristic.characteristic" id="apidoc.element.homebridge-bluetooth.characteristic.characteristic">
+        function <span class="apidocSignatureSpan">homebridge-bluetooth.</span>characteristic
+        <span class="apidocSignatureSpan">(characteristic)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">characteristic = function (characteristic) {
+  Characteristic = characteristic;
+
+  return BluetoothCharacteristic;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.homebridge-bluetooth.platform" id="apidoc.module.homebridge-bluetooth.platform">module homebridge-bluetooth.platform</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge-bluetooth.platform.platform" id="apidoc.element.homebridge-bluetooth.platform.platform">
+        function <span class="apidocSignatureSpan">homebridge-bluetooth.</span>platform
+        <span class="apidocSignatureSpan">(noble, uuidGen, accessory, bluetoothAccessory)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">platform = function (noble, uuidGen, accessory, bluetoothAccessory) {
+  Noble = noble;
+  UUIDGen = uuidGen
+  Accessory = accessory;
+  BluetoothAccessory = bluetoothAccessory;
+
+  return BluetoothPlatform;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.homebridge-bluetooth.service" id="apidoc.module.homebridge-bluetooth.service">module homebridge-bluetooth.service</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge-bluetooth.service.service" id="apidoc.element.homebridge-bluetooth.service.service">
+        function <span class="apidocSignatureSpan">homebridge-bluetooth.</span>service
+        <span class="apidocSignatureSpan">(service, bluetoothCharacteristic)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">service = function (service, bluetoothCharacteristic) {
+  Service = service;
+  BluetoothCharacteristic = bluetoothCharacteristic;
+
+  return BluetoothService;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.homebridge-bluetooth.toString" id="apidoc.module.homebridge-bluetooth.toString">module homebridge-bluetooth.toString</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge-bluetooth.toString.toString" id="apidoc.element.homebridge-bluetooth.toString.toString">
+        function <span class="apidocSignatureSpan">homebridge-bluetooth.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function toString() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+case Characteristic.Formats.INT: // BLEIntCharacteristic
+  value = buffer.readInt32LE(0);
+  break;
+case Characteristic.Formats.FLOAT: // BLEFloatCharacteristic
+  value = buffer.readFloatLE(0);
+  break;
+case Characteristic.Formats.STRING: // BLECharacteristic
+  value = buffer.<span class="apidocCodeKeywordSpan">toString</span>('utf8', 0);
+  break;
+case Characteristic.Formats.UINT8: // BLEUnsignedCharCharacteristic
+  value = buffer.readUInt8(0);
+  break;
+case Characteristic.Formats.UINT16: // BLEUnsignedShortCharacteristic
+  value = buffer.readUInt16LE(0);
+  break;
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
