@@ -1,4 +1,7 @@
-# api documentation for  [homebridge-bluetooth (v0.1.6)](https://github.com/vojtamolda/homebridge-bluetooth#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-homebridge-bluetooth.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-homebridge-bluetooth) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-homebridge-bluetooth.svg)](https://travis-ci.org/npmdoc/node-npmdoc-homebridge-bluetooth)
+# npmdoc-homebridge-bluetooth
+
+#### basic api documentation for  [homebridge-bluetooth (v0.1.6)](https://github.com/vojtamolda/homebridge-bluetooth#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-homebridge-bluetooth.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-homebridge-bluetooth) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-homebridge-bluetooth.svg)](https://travis-ci.org/npmdoc/node-npmdoc-homebridge-bluetooth)
+
 #### Homebridge plugin that exposes Bluetooth peripherals as HomeKit accessories
 
 [![NPM](https://nodei.co/npm/homebridge-bluetooth.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/homebridge-bluetooth)
@@ -59,7 +62,8 @@
         "url": "git://github.com/vojtamolda/homebridge-bluetooth.git"
     },
     "scripts": {},
-    "version": "0.1.6"
+    "version": "0.1.6",
+    "bin": {}
 }
 ```
 
